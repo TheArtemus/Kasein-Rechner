@@ -1,0 +1,101 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Du armer Anlagenfahrer!"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- RadioGroup Welche Analge läuft? -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Welche Anlage läuft?"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RadioGroup
+        android:id="@+id/anlageRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/anlage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Anlage 1"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/anlage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Anlage 2"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/beideAnlage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Beide Anlagen"
+            android:textSize="30sp" />
+    </RadioGroup>
+
+    <!-- Поле ввода объема молока внизу -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Wie viel m³ hat in MilchTank?"
+        android:layout_below="@id/anlageRadioGroup"
+        android:layout_marginTop="38dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/milkVolumeEditText"
+        android:layout_width="300dp"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_below="@id/anlageRadioGroup"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Gib die Menge an m³" />
+
+    <!-- Кнопка рассчета -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Berechnen"
+        android:layout_below="@id/milkVolumeEditText"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Текст с результатом -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
