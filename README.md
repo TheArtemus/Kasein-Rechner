@@ -4,9 +4,9 @@ An Android app to calculate milk processing time based on the machine selected. 
 
 Features
 
-	•	Input milk volume.
-	•	Select from 3 machines.
-	•	Get processing and finish times.
+• Input milk volume.
+• Select from 3 machines. 
+• Get processing and finish times.
 
 This should be concise and to the point!
 
