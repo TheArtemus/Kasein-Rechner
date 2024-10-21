@@ -15,5 +15,5 @@ This should be concise and to the point!
 ![Screenshot_20241020_042640](https://github.com/user-attachments/assets/eebc2b86-a5f0-4633-9292-8d52f9113a05)
 
 
-Developer: Marius (Original source code)
+Developer: Máriusz (Original source code)
 Revised and customized by: Artem
